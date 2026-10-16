@@ -1,26 +1,87 @@
-Role: Expert Web Designer & Front-end Developer.
-Task: Design the HOME page for "ROBOCART" Educational Robotics Website.
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBOCART Learning Center</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Kanit', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
 
-Structure & Content:
-1. Hero Section:
-   - Headline: "การพัฒนารูปแบบการจัดการเรียนรู้โดยใช้หุ่นยนต์ช่วยสอน เพื่อส่งเสริมทักษะการเขียนโปรแกรมและการคิดเชิงคำนวณ สำหรับนักเรียนชั้นประถมศึกษาปีที่ 4 - 6"
-   - Sub-headline: "นวัตกรรมหุ่นยนต์ช่วยสอน ROBOCART ควบคู่กับกระบวนการเรียนรู้ 5 ขั้นตอน และระบบตรวจสอบโค้ดอัตโนมัติ"
-   - CTA Buttons: [เริ่มต้นเรียนรู้] [ดาวน์โหลดเล่มโครงการ]
-   - Video Embed Placeholder: YouTube video for "บทที่ 1 | การ์ตูนสถานการณ์จำลอง"
+    <!-- Header Navigation -->
+    <header class="bg-[#0B192C] text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-[#00D2FF]">ROBOCART</h1>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#" class="hover:text-[#00D2FF]">HOME</a>
+                <a href="#" class="hover:text-[#00D2FF]">บทนำ</a>
+                <a href="#" class="hover:text-[#00D2FF]">เอกสารที่เกี่ยวข้อง</a>
+                <a href="#" class="hover:text-[#00D2FF]">วิธีดำเนินการ</a>
+                <a href="#" class="hover:text-[#00D2FF]">ผลการศึกษา</a>
+                <a href="#" class="hover:text-[#00D2FF]">สรุปผล</a>
+            </nav>
+            <button class="bg-[#00D2FF] text-[#0B192C] px-4 py-2 rounded-lg font-semibold hover:bg-cyan-300">โหมดคุณครู</button>
+        </div>
+    </header>
 
-2. Section: รูปแบบการจัดการเรียนรู้ 5 ขั้นตอน (5-Step Instructional Framework):
-   - Grid layout featuring 5 step cards with icons:
-     1) กำหนดสถานการณ์ปัญหา (Problem Situation - Animation intro)
-     2) นำเสนอความรู้ (Knowledge Presentation - Hardware & MakeCode intro)
-     3) มอบหมายภารกิจ (Task Assignment - Mission challenge)
-     4) เชื่อมโยงผลกิจกรรม (Synthesis & Connection - Reflection & Soft skills)
-     5) นำเสนออย่างสร้างสรรค์ (Creative Presentation - Group showcase)
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-[#0B192C] to-[#1E3E62] text-white py-20 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold leading-tight mb-6">
+                การพัฒนารูปแบบการจัดการเรียนรู้โดยใช้หุ่นยนต์ช่วยสอน
+            </h2>
+            <p class="text-lg md:text-xl text-slate-300 mb-8">
+                เพื่อส่งเสริมทักษะการเขียนโปรแกรมและการคิดเชิงคำนวณ สำหรับนักเรียนชั้นประถมศึกษาปีที่ 4 - 6
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#learning" class="bg-[#00D2FF] text-[#0B192C] px-6 py-3 rounded-xl font-bold hover:bg-cyan-300 transition">เริ่มต้นเรียนรู้</a>
+                <a href="#" class="border border-white px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-[#0B192C] transition">ดาวน์โหลดเล่มโครงการ</a>
+            </div>
+        </div>
+    </section>
 
-3. Section: โครงสร้างหุ่นยนต์ ROBOCART (Robot Hardware Overview):
-   - Interactive card layout showing 3 Sensor Levels (Level 1-3: Basic movement, Line follower, Obstacle avoidance).
-   - Tech Specs Badge: micro:bit V2, REKA:BIT Expansion Board, 2 DC Motors, 5-Point IR Line Sensor, Ultrasonic Sensor HC-SR04P.
+    <!-- 5-Step Learning Framework -->
+    <section id="learning" class="max-w-7xl mx-auto py-16 px-4">
+        <h3 class="text-2xl font-bold text-center text-[#0B192C] mb-12">รูปแบบการจัดการเรียนรู้ 5 ขั้นตอน</h3>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                <span class="text-3xl">1️⃣</span>
+                <h4 class="font-bold my-2 text-[#1E3E62]">กำหนดสถานการณ์ปัญหา</h4>
+                <p class="text-xs text-slate-500">ผ่าน Animation อวกาศ</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                <span class="text-3xl">2️⃣</span>
+                <h4 class="font-bold my-2 text-[#1E3E62]">นำเสนอความรู้</h4>
+                <p class="text-xs text-slate-500">ฮาร์ดแวร์ & MakeCode</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                <span class="text-3xl">3️⃣</span>
+                <h4 class="font-bold my-2 text-[#1E3E62]">มอบหมายภารกิจ</h4>
+                <p class="text-xs text-slate-500">ปฏิบัติภารกิจผ่านใบงาน</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                <span class="text-3xl">4️⃣</span>
+                <h4 class="font-bold my-2 text-[#1E3E62]">เชื่อมโยงผลกิจกรรม</h4>
+                <p class="text-xs text-slate-500">สะท้อนคิด & Soft Skills</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 text-center">
+                <span class="text-3xl">5️⃣</span>
+                <h4 class="font-bold my-2 text-[#1E3E62]">นำเสนอสร้างสรรค์</h4>
+                <p class="text-xs text-slate-500">การนำเสนอผลงานกลุ่ม</p>
+            </div>
+        </div>
+    </section>
 
-4. Section: เว็บไซต์ ROBOCART LEARNING CENTER:
-   - Highlight section introducing the Automated Block Code Checker system with instant feedback, plus 'Teacher Mode' (โหมดคุณครู) to access lesson plans and answer keys.
+    <!-- Footer -->
+    <footer class="bg-[#0B192C] text-slate-400 text-center py-6 text-sm border-t border-slate-800">
+        <p>เว็บไซต์นี้เป็นส่วนหนึ่งของรายวิชาโครงงานเทคโนโลยีดิจิทัลเพื่อการศึกษาและคอมพิวเตอร์ศึกษา</p>
+        <p>คณะศึกษาศาสตร์ มหาวิทยาลัยบูรพา</p>
+    </footer>
 
-Design Style: Clean, modern navy blue UI with smooth card hover effects and high readability.
+</body>
+</html>
